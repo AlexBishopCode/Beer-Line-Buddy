@@ -72,3 +72,74 @@ function ticketBox(event) {
 document.querySelectorAll('.fa-circle').forEach(faCircleElement => {
     faCircleElement.addEventListener('click', ticketBox);
 });
+
+document.getElementById('timer-button-one').addEventListener('click', () => {
+
+    let timerOne = 900;
+    
+    const intervalOne = setInterval(() => {
+        timerOne--;
+    
+        const mm = Math.floor(timerOne / 60);
+        const ss = timerOne % 60;
+        
+        const constructMinutes = mm.toString().padStart(2, '0');
+        const constructSeconds = ss.toString().padStart(2, '0');
+    
+        document.getElementById('timer1').innerText = `${constructMinutes}:${constructSeconds}`;
+        if (timerOne < 1) {
+            clearInterval(intervalOne);
+            document.getElementById('timer1').innerText = "Pull through half a jug and start Timer 2";
+        }
+        console.log(timerOne);
+    }, 1000);
+    });
+    
+    //Timer Two
+    
+    document.getElementById('timer-button-two').addEventListener('click', () => {
+    
+    let timerTwo = 900;
+    
+    const intervalTwo = setInterval(() => {
+        timerTwo--;
+    
+        const mm = Math.floor(timerTwo / 60);
+        const ss = timerTwo % 60;
+        
+        const constructMinutes = mm.toString().padStart(2, '0');
+        const constructSeconds = ss.toString().padStart(2, '0');
+    
+        document.getElementById('timer2').innerText = `${constructMinutes}:${constructSeconds}`;
+        if (timerTwo < 1) {
+            clearInterval(intervalTwo);
+            document.getElementById('timer2').innerText = "Pull through half a jug and start Timer 3";
+        }
+        console.log(timerTwo);
+    }, 1000);
+    });
+    
+    //Timer Three
+    
+    document.getElementById('timer-button-three').addEventListener('click', () => {
+    
+        let timerThree = 900;
+    
+        const intervalThree = setInterval(() => {
+            timerThree--;
+        
+            const mm = Math.floor(timerThree / 60);
+            const ss = timerThree % 60;
+            
+            const constructMinutes = mm.toString().padStart(2, '0');
+            const constructSeconds = ss.toString().padStart(2, '0');
+        
+            document.getElementById('timer3').innerText = `${constructMinutes}:${constructSeconds}`;
+            if (timerThree < 1) {
+                clearInterval(intervalThree);
+                document.getElementById('timer3').innerText = "Final pull complete. Start step 6.";
+            }
+            console.log(timerThree);
+        }, 1000);
+        });
+    
