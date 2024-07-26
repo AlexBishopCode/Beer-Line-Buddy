@@ -143,3 +143,14 @@ document.getElementById('timer-button-one').addEventListener('click', () => {
         }, 1000);
         });
     
+        //Reset Button
+//https://developer.mozilla.org/en-US/docs/Web/API/Location/reload
+
+document.addEventListener("DOMContentLoaded", function() {
+    const resetButton = document.getElementById("reset-button");
+
+    resetButton.addEventListener('click', function() {
+        window.location.reload();
+        window.scrollTo(0, 0);
+    });
+});
