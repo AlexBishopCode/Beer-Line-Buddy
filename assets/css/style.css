@@ -255,3 +255,23 @@ h1 {
     box-shadow: 0 2px #666;
 
 }
+
+#hidden-div-parent {
+    max-width: 100%;
+    margin: 4px;
+    align-content: center;
+    margin: -15px 3px 5px 3px;
+}
+
+#hiddenDiv {
+    display: none;
+    max-width: 100%;
+    height: 100px;
+    background-color: lightblue;
+    text-align: center;
+    border: 1px solid #000;
+    background-color: #d4cba7;
+    border-radius: 10px;
+    align-content: center;
+    font-size: x-large;
+}
