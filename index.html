@@ -8,6 +8,7 @@
         <title>BeerLine Buddy</title>
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
+
     <body>
         <div id="wrapper">
             <section>
@@ -23,8 +24,63 @@
                         <h1 id="logo-info-text">Clean a cask beer line <br>in nine simple steps!</h1>
                     </div>
                 </div>
+                <br>
+            <div id="instruction-div">
+                <div id="previous-button-div">
+                    <button class="div-border-stylings" id="previous-button" disabled>Previous</button>
+                </div>
+                <div id="instruction-text-div">
+                    <div class="div-border-stylings" id="instruction-text">
+                    </div>
+                </div>
+                <div id="next-button-div">
+                    <button id="next-button" class="div-border-stylings">Next</button>
+                </div>
+            </div>
             </section>
+            <br>
+            <div class="number-div">
+                <div class="inner-number-div">Step 1</div>
+                <div class="inner-number-div">Step 2</div>
+            </div>
+            <section>
+                <div class="section-div-one">
+                    <div class="step-div" id="step-one-div">
+                        <div class="internal-step-div-top">Fill two large buckets with water. Add 100ml of line cleaner to one of the buckets</div>
+                        <div class="internal-step-div-bottom" id="step-div-one">
+                            <i id="checkbox1" class="icon fa-regular fa-circle clickable-button" data-target="step-div-one"></i>
+                        </div>
+                    </div>
+                    <div class="step-div" id="step-two-div">
+                        <div class="internal-step-div-top">Secure the beerline into the bottom of the bucket with no line cleaner.</div>
+                        <div class="internal-step-div-bottom" id="step-div-two">
+                            <i id="checkbox2" class="icon fa-regular fa-circle clickable-button" data-target="step-div-two"></i>
+                        </div>
+                    </div>
+                <div>
+            </section>
+            <br>
+        <div class="number-div">
+            <div class="inner-number-div">Step 3</div>
+            <div class="inner-number-div">Step 4</div>
         </div>
+        <section>
+            <div class="section-div-two">
+                <div class="step-div" id="step-three-div">
+                    <div class="internal-step-div-top">Pull thee handpull of the chosen line and fill a full jug with the water.</div>
+                    <div class="internal-step-div-bottom" id="step-div-three">
+                        <i id="checkbox3" class="icon fa-regular fa-circle clickable-button" data-target="step-div-three"></i>
+                    </div>
+                </div>
+                <div class="step-div" id="step-four-div">
+                    <div class="internal-step-div-top">Transfer the line into the bucket with line cleaner. Pull through half a jug and start Timer One.</div>
+                    <div class="internal-step-div-bottom" id="step-div-four">
+                        <i id="checkbox4" class="icon fa-regular fa-circle clickable-button" data-target="step-div-four"></i>
+                    </div>
+                </div>
+            </div>  
+        </section>
+            
         <script src="assets/js/script.js"></script>
     </body>
     </html>
